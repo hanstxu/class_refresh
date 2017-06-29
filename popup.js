@@ -15,6 +15,9 @@ var refreshClock = {
   },
 
   setup: function() {
+	chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+      chrome.storage.local.set({'TabID':tabs[0].id});
+	});
     var el = document.getElementById('refreshOn');
     el.addEventListener('click',  refreshClock.onHandler );
     var el = document.getElementById('refreshOff');
