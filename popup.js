@@ -15,13 +15,14 @@ var refreshClock = {
   },
 
   setup: function() {
-    var e = document.getElementById('refreshOn');
-    e.addEventListener('click',  refreshClock.onHandler );
-    var e = document.getElementById('refreshOff');
-    e.addEventListener('click',  refreshClock.offHandler );
+    var el = document.getElementById('refreshOn');
+    el.addEventListener('click',  refreshClock.onHandler );
+    var el = document.getElementById('refreshOff');
+    el.addEventListener('click',  refreshClock.offHandler );
   }
 };
 
 document.addEventListener('DOMContentLoaded', function () {
+	console.log("Hello");
     refreshClock.setup();
 });
