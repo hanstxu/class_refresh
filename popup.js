@@ -26,6 +26,5 @@ var refreshClock = {
 };
 
 document.addEventListener('DOMContentLoaded', function () {
-	console.log("Hello");
-    refreshClock.setup();
+  refreshClock.setup();
 });
