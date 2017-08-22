@@ -5,6 +5,6 @@ chrome.runtime.onMessage.addListener(function (msg, sender, sendResponse) {
     var info_table = enrl_mtng_info.firstElementChild.nextElementSibling;
     var enrollment_status = info_table.firstElementChild.firstElementChild;
     var check_string = enrollment_status.innerHTML.substring(0,4);
-    sendResponse((check_string == "Open"));
+    sendResponse(check_string);
   }
 });

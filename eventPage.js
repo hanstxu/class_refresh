@@ -1,12 +1,24 @@
-function notify(matched) {
-  if (matched) {
+function notify(status) {
+  if (status == "Open") {
     chrome.notifications.create(
       'open_class',
       {
         type: 'basic',
         iconUrl: 'icon128.png',
         title: "Class is now open!",
-        message: "Hurry up and sign up!"
+        message: "Hurry and sign up!"
+      },
+      function() {}
+    );
+  }
+  else if (status == "Wait") {
+    chrome.notifications.create(
+      'open_class',
+      {
+        type: 'basic',
+        iconUrl: 'icon128.png',
+        title: "Class has waitlist spots open!",
+        message: "Hurry to get on the waitlist!"
       },
       function() {}
     );
