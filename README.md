@@ -3,6 +3,12 @@
 A chrome extension that automatically refreshes a class page on 
 MyUCLA and notifies you if an enrollment spot has been opened.
 
+You can install this extension manually on your own by downloading
+the source files and loading them into the chrome extensions page.
+I don't currently plan on publishing this extension to the Chrome
+Web Store because I don't want go through the hassle of trying to
+figure out the publishing process and paying a signup fee.
+
 ### How Install and Use this Extension
 
 ##### Part 1: Loading the Extension onto Chrome 
